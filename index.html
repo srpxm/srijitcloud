@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Srijit Pal, a backend-focused full stack developer building scalable web products and APIs.">
-    <title>Srijit Pal | Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Srijit Pal, a full stack software engineer combining computer science fundamentals with polished product execution.">
+    <title>Srijit Pal | Full Stack Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
@@ -25,14 +25,15 @@
                 <div class="nav-panel" id="nav-menu">
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#edge">Advantage</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <div class="nav-actions">
                         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Light</button>
-                        <a href="#contact" class="btn btn-small">Hire Me</a>
+                        <a href="#projects" class="btn btn-small">View Work</a>
                     </div>
                 </div>
             </nav>
@@ -41,120 +42,145 @@
         <main>
             <section class="hero section show" id="home">
                 <div class="hero-copy">
-                    <p class="eyebrow">Backend-focused full stack developer</p>
+                    <p class="eyebrow">FULL STACK SOFTWARE ENGINEER</p>
+                    <div class="hero-kicker">Computer science depth with product-level execution</div>
                     <h1><span id="typing"></span></h1>
                     <p class="hero-subtitle" id="typing1"></p>
                     <p class="hero-text">
-                        I build digital products with backend depth and front-end restraint, turning technical skill into work that feels bold, modern, and unmistakably intentional.
+                        I engineer full-stack digital products, pairing scalable backend architectures with responsive, pixel-perfect frontends.
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#projects" class="btn">See Projects</a>
-                        <a href="mailto:srijitpal.official@gmail.com" class="btn btn-secondary">Let's Talk</a>
+                        <a href="#projects" class="btn">Explore Projects</a>
+                        <a href="https://drive.google.com/file/d/173Itxz-duMdl2pIkBFWGSzn3-8FPZzSu/view?usp=sharing" target="_blank" rel="noreferrer" class="btn btn-secondary">View Resume</a>
                     </div>
 
                     <div class="hero-metrics">
                         <div class="metric-card">
-                            <strong>Backend-first builder</strong>
-                            <span>Systems, APIs, and product logic designed to scale cleanly.</span>
+                            <strong>Computer Science Foundations</strong>
+                            <span>Data Structures, Operating Systems, DBMS, networking, and system design shape how I build.</span>
                         </div>
                         <div class="metric-card">
-                            <strong>Design-aware engineer</strong>
-                            <span>Interfaces that look refined instead of looking assembled.</span>
+                            <strong>Full Stack Ownership</strong>
+                            <span>I design the schema, expose the API, shape the UI, and optimize the flow as one connected system.</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-visual">
-                    <div class="hero-card main-card">
-                        <p class="card-label">What makes me different</p>
-                        <h2>I care about how the architecture feels and how the experience performs.</h2>
+                    <article class="hero-card main-card">
+                        <p class="card-label">What Makes Me Different</p>
+                        <h2>I care equally about how the database scales and how the interface responds.</h2>
+                        <p class="card-copy">I build optimized systems from the data layer up to the DOM.</p>
+
                         <div class="stack-pills">
                             <span>Django</span>
+                            <span>PostgreSQL</span>
                             <span>REST APIs</span>
-                            <span>JavaScript</span>
-                            <span>SQL</span>
+                            <span>Responsive UI</span>
                         </div>
-                    </div>
 
-                    <div class="hero-card floating-card">
-                        <p class="card-label">Signature</p>
-                        <ul>
-                            <li>Sharp visual tone</li>
-                            <li>Readable, scalable code</li>
-                            <li>Fast responsive layouts</li>
-                        </ul>
-                    </div>
+                        <div class="mini-architecture">
+                            <div class="mini-node">Client UI</div>
+                            <div class="mini-link">requests</div>
+                            <div class="mini-node">Django API</div>
+                            <div class="mini-link">ORM</div>
+                            <div class="mini-node">PostgreSQL</div>
+                        </div>
+                    </article>
+
+                    <article class="hero-card api-card" id="status-widget" data-api-endpoint="">
+                        <div class="api-card-header">
+                            <p class="card-label">Live API Widget</p>
+                            <button class="refresh-btn" id="status-refresh" type="button">Refresh</button>
+                        </div>
+
+                        <strong class="status-value" id="status-value">API hook ready</strong>
+                        <p class="status-detail" id="status-detail">
+                            Connect your custom REST endpoint and this widget can surface a live developer status, visit count, or guestbook signal.
+                        </p>
+
+                        <div class="status-footer">
+                            <span class="status-chip" id="status-chip">Custom REST API</span>
+                            <span class="status-meta" id="status-meta">Waiting for endpoint configuration</span>
+                        </div>
+                    </article>
                 </div>
             </section>
 
             <section id="about" class="section">
                 <div class="section-heading">
                     <p class="eyebrow">About</p>
-                    <h2>Building software that feels authored, not mass-produced.</h2>
+                    <h2>Building software that bridges theory and execution.</h2>
                 </div>
 
                 <div class="about-grid">
-                    <div class="about-card">
+                    <article class="about-card about-card-large">
                         <p>
-                            I am a Computer Science postgraduate with a strong interest in backend engineering, scalable APIs, and polished digital products. I enjoy turning complex requirements into systems that are simple to use and easy to maintain.
+                            As a computer science postgraduate, my foundation is built on deep engineering principles, Data Structures, Operating Systems, and Database Management. But I do not just write algorithms. I apply them to build full-stack products that are scalable, maintainable, and visually refined from the first interaction.
                         </p>
-                    </div>
-                    <div class="about-card">
-                        <p>
-                            My edge is the combination of engineering fundamentals and visual judgment. I do not want projects that only function well. I want them to feel premium, clear, and memorable from the first interaction.
-                        </p>
-                    </div>
+                    </article>
+                    <article class="about-card">
+                        <h3>How I work</h3>
+                        <ul class="detail-list">
+                            <li>I model the system first so the product can grow without friction.</li>
+                            <li>I build interfaces that stay responsive, clear, and accurate under real data.</li>
+                            <li>I prefer maintainable architecture over quick wins that create future debt.</li>
+                        </ul>
+                    </article>
                 </div>
             </section>
 
             <section id="edge" class="section">
                 <div class="section-heading">
-                    <p class="eyebrow">Edge</p>
-                    <h2>The kind of value that makes a recruiter stop scrolling.</h2>
+                    <p class="eyebrow">The Full Stack Advantage</p>
+                    <h2>Owning the architecture and the interface as one connected system.</h2>
+                    <p class="section-lead">
+                        My edge is the ability to own the entire product lifecycle. I do not have to compromise on the UI because of backend limitations, and I do not build interfaces that the architecture cannot support.
+                    </p>
                 </div>
 
                 <div class="edge-grid">
                     <article class="edge-card edge-card-large">
                         <span class="edge-number">01</span>
-                        <h3>I blend backend seriousness with front-end polish.</h3>
-                        <p>Many student portfolios choose one side. I build dependable logic and present it with a visual language that feels deliberate.</p>
+                        <h3>System-first thinking</h3>
+                        <p>I map data models, relationships, and request flows before the UI gets layered on top, which keeps the experience coherent as features expand.</p>
                     </article>
                     <article class="edge-card">
                         <span class="edge-number">02</span>
-                        <h3>I think in systems.</h3>
-                        <p>From API design to database structure, I focus on clarity, maintainability, and growth.</p>
+                        <h3>Backend ownership</h3>
+                        <p>I focus on schema design, API boundaries, validation, security, and performance so the product has a stable core.</p>
                     </article>
                     <article class="edge-card">
                         <span class="edge-number">03</span>
-                        <h3>I design for impression.</h3>
-                        <p>Details matter. Spacing, rhythm, typography, and motion all help the work feel stronger.</p>
+                        <h3>Frontend precision</h3>
+                        <p>I translate the architecture into interfaces that are responsive, clean, and intentional down to spacing, state, and interaction detail.</p>
                     </article>
                 </div>
             </section>
 
             <section id="skills" class="section">
                 <div class="section-heading">
-                    <p class="eyebrow">Skills</p>
-                    <h2>Capabilities shaped for serious product work.</h2>
+                    <p class="eyebrow">Core Stack</p>
+                    <h2>The tools and disciplines I rely on to ship complete products.</h2>
                 </div>
 
                 <div class="skills-grid">
                     <article class="skill-card">
-                        <h3>Backend Development</h3>
-                        <p>Django, REST APIs, authentication flows, database modeling, and business logic built for scale.</p>
+                        <h3>Backend Systems</h3>
+                        <p>Django, REST APIs, authentication, database modeling, validation pipelines, and scalable business logic.</p>
                     </article>
                     <article class="skill-card">
-                        <h3>Frontend Experience</h3>
-                        <p>Responsive layouts, clean UI systems, animation polish, and mobile-friendly user journeys.</p>
+                        <h3>Frontend Engineering</h3>
+                        <p>Responsive layouts, interaction states, performance-minded UI work, and polished presentation across devices.</p>
                     </article>
                     <article class="skill-card">
-                        <h3>Core Computer Science</h3>
-                        <p>Strong fundamentals in DSA, operating systems, DBMS, networking concepts, and system design.</p>
+                        <h3>Computer Science</h3>
+                        <p>DSA, Operating Systems, DBMS, and system design principles that support better architectural decisions.</p>
                     </article>
                     <article class="skill-card">
-                        <h3>Collaboration</h3>
-                        <p>Readable code, maintainable project structure, and a practical approach to solving real user needs.</p>
+                        <h3>Product Delivery</h3>
+                        <p>I bridge design clarity, engineering rigor, and maintainable implementation so the product works as a whole.</p>
                     </article>
                 </div>
             </section>
@@ -162,78 +188,197 @@
             <section id="projects" class="section">
                 <div class="section-heading">
                     <p class="eyebrow">Projects</p>
-                    <h2>Projects presented like outcomes, not assignments.</h2>
+                    <h2>Proof that I build both the experience and the engine behind it.</h2>
+                    <p class="section-lead">
+                        Use the filters to isolate specific technologies, then open a case study to see frontend execution and backend architecture separated clearly.
+                    </p>
+                </div>
+
+                <div class="filter-bar" role="toolbar" aria-label="Project filters">
+                    <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" type="button" data-filter="django" aria-pressed="false">Django</button>
+                    <button class="filter-btn" type="button" data-filter="api" aria-pressed="false">REST APIs</button>
+                    <button class="filter-btn" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+                    <button class="filter-btn" type="button" data-filter="postgresql" aria-pressed="false">PostgreSQL</button>
                 </div>
 
                 <div class="projects-grid">
-                    <article class="project-card featured">
+                    <article class="project-card project-card-wide featured is-visible" data-tags="fullstack django api frontend postgresql">
                         <div class="project-topline">
-                            <span class="project-badge">Featured</span>
+                            <span class="project-badge">Featured System</span>
                             <span class="project-year">2026</span>
                         </div>
-                        <h3>University Management System</h3>
-                        <p>
-                            A Django and REST API platform to manage students, courses, faculty workflows, and academic operations with strong structure and admin clarity.
-                        </p>
-                        <div class="project-tech">
-                            <span>Django</span>
-                            <span>REST API</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-                            <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
+
+                        <div class="project-body">
+                            <div class="project-showcase">
+                                <div class="showcase-panel showcase-ui">
+                                    <span class="showcase-label">Frontend View</span>
+                                    <div class="ui-window">
+                                        <div class="ui-topbar">
+                                            <span class="ui-dot"></span>
+                                            <span class="ui-dot"></span>
+                                            <span class="ui-dot"></span>
+                                        </div>
+                                        <div class="ui-shell">
+                                            <div class="ui-sidebar">
+                                                <span class="ui-pill active"></span>
+                                                <span class="ui-pill"></span>
+                                                <span class="ui-pill"></span>
+                                            </div>
+                                            <div class="ui-main">
+                                                <div class="ui-hero-row"></div>
+                                                <div class="ui-card-row">
+                                                    <div class="ui-card"></div>
+                                                    <div class="ui-card"></div>
+                                                </div>
+                                                <div class="ui-card wide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-panel showcase-arch">
+                                    <span class="showcase-label">Backend Flow</span>
+                                    <div class="arch-diagram">
+                                        <div class="arch-row">
+                                            <div class="arch-box accent-blue">Student UI</div>
+                                            <div class="arch-arrow">REST</div>
+                                            <div class="arch-box">Django API</div>
+                                        </div>
+                                        <div class="arch-row">
+                                            <div class="arch-box">Auth + Roles</div>
+                                            <div class="arch-arrow">ORM</div>
+                                            <div class="arch-box accent-gold">PostgreSQL</div>
+                                        </div>
+                                        <div class="arch-row">
+                                            <div class="arch-box">Faculty Actions</div>
+                                            <div class="arch-arrow">Rules</div>
+                                            <div class="arch-box">Admin Workflows</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>University Management System</h3>
+                                <p>
+                                    A role-aware academic platform that manages students, courses, faculty workflows, and administrative operations through structured interfaces and dependable backend logic.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>REST API</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Responsive Dashboard</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                                    <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
+                                    <button class="link-button case-study-btn" type="button" data-case-study="ums">View Case Study</button>
+                                </div>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card-wide is-visible" data-tags="fullstack django api frontend postgresql">
                         <div class="project-topline">
                             <span class="project-badge">Case Study</span>
                             <span class="project-year">2026</span>
                         </div>
-                        <h3>E-commerce Platform</h3>
-                        <p>
-                            A multi-vendor marketplace for artisans with discovery, listing, and management flows designed to support growth and trust.
-                        </p>
-                        <div class="project-tech">
-                            <span>Backend Logic</span>
-                            <span>Search</span>
-                            <span>Product Management</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-                            <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
-                        </div>
-                    </article>
 
-                    <article class="project-card">
-                        <div class="project-topline">
-                            <span class="project-badge">Approach</span>
-                            <span class="project-year">Always</span>
-                        </div>
-                        <h3>Engineering Philosophy</h3>
-                        <p>
-                            I focus on building things that stay understandable as they grow, and on giving users an experience that feels confidently designed from the first click.
-                        </p>
-                        <div class="project-tech">
-                            <span>Clarity</span>
-                            <span>Performance</span>
-                            <span>Maintainability</span>
+                        <div class="project-body">
+                            <div class="project-showcase">
+                                <div class="showcase-panel showcase-ui">
+                                    <span class="showcase-label">Frontend View</span>
+                                    <div class="ui-window commerce-window">
+                                        <div class="ui-topbar">
+                                            <span class="ui-dot"></span>
+                                            <span class="ui-dot"></span>
+                                            <span class="ui-dot"></span>
+                                        </div>
+                                        <div class="commerce-search"></div>
+                                        <div class="commerce-grid">
+                                            <div class="product-card"></div>
+                                            <div class="product-card"></div>
+                                            <div class="product-card tall"></div>
+                                            <div class="product-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-panel showcase-arch">
+                                    <span class="showcase-label">Backend Flow</span>
+                                    <div class="arch-diagram">
+                                        <div class="arch-row">
+                                            <div class="arch-box accent-blue">Marketplace UI</div>
+                                            <div class="arch-arrow">Query</div>
+                                            <div class="arch-box">Search API</div>
+                                        </div>
+                                        <div class="arch-row">
+                                            <div class="arch-box">Vendor Panel</div>
+                                            <div class="arch-arrow">Write</div>
+                                            <div class="arch-box accent-gold">Product DB</div>
+                                        </div>
+                                        <div class="arch-row">
+                                            <div class="arch-box">Checkout Flow</div>
+                                            <div class="arch-arrow">Rules</div>
+                                            <div class="arch-box">Order Services</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>E-commerce Platform</h3>
+                                <p>
+                                    A multi-vendor marketplace for artisans focused on discoverability, product management, and trustworthy purchase flows across desktop and mobile.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>REST API</span>
+                                    <span>Catalog Search</span>
+                                    <span>Frontend UX</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                                    <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
+                                    <button class="link-button case-study-btn" type="button" data-case-study="commerce">View Case Study</button>
+                                </div>
+                            </div>
                         </div>
                     </article>
+                </div>
+            </section>
+
+            <section id="resume" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">Resume</p>
+                    <h2>Open my resume directly and review the full experience stack in one place.</h2>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-copy">
+                        <h3>Resume / CV</h3>
+                        <p>
+                            If you want the complete snapshot of my experience, projects, and technical foundation, you can open the latest resume directly from here.
+                        </p>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="https://drive.google.com/file/d/173Itxz-duMdl2pIkBFWGSzn3-8FPZzSu/view?usp=sharing" target="_blank" rel="noreferrer" class="btn">View Resume</a>
+                        <!-- <a href="https://drive.google.com/file/d/173Itxz-duMdl2pIkBFWGSzn3-8FPZzSu/view?usp=sharing" target="_blank" rel="noreferrer" class="link-button">Open CV</a> -->
+                    </div>
                 </div>
             </section>
 
             <section id="contact" class="section">
                 <div class="section-heading">
                     <p class="eyebrow">Contact</p>
-                    <h2>Let’s build something impossible to ignore.</h2>
+                    <h2>Let's build a product with strong foundations and a refined finish.</h2>
                 </div>
 
                 <div class="contact-layout">
                     <div class="contact-copy">
                         <p>
-                            If you want someone who cares about architecture, user experience, and clean execution, I would love to connect.
+                            If you need someone who can reason about the data model, expose the API cleanly, and still deliver a polished interface, I would be glad to connect.
                         </p>
                     </div>
 
@@ -258,6 +403,33 @@
                 </div>
             </section>
         </main>
+    </div>
+
+    <div class="modal-overlay" id="case-study-modal" hidden>
+        <div class="modal-backdrop" data-close="modal"></div>
+        <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="case-study-title">
+            <button class="modal-close" type="button" id="case-study-close" aria-label="Close case study">Close</button>
+            <p class="eyebrow">Case Study</p>
+            <h3 id="case-study-title"></h3>
+            <p class="modal-summary" id="case-study-summary"></p>
+            <div class="modal-stack" id="case-study-stack"></div>
+
+            <div class="modal-grid">
+                <section class="modal-section">
+                    <h4>Frontend Execution</h4>
+                    <ul class="modal-list" id="case-study-frontend"></ul>
+                </section>
+                <section class="modal-section">
+                    <h4>Backend Architecture</h4>
+                    <ul class="modal-list" id="case-study-backend"></ul>
+                </section>
+            </div>
+
+            <section class="modal-section modal-section-wide">
+                <h4>Engineering Outcomes</h4>
+                <ul class="modal-list" id="case-study-outcomes"></ul>
+            </section>
+        </article>
     </div>
 
     <button id="topBtn" aria-label="Scroll to top">Top</button>
