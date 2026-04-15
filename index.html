@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Srijit Pal, a backend-focused full stack developer building scalable web products and APIs.">
+    <title>Srijit Pal | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="#home" class="brand">Srijit<span>.</span></a>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-panel" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Light</button>
+                        <a href="#contact" class="btn btn-small">Hire Me</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section show" id="home">
+                <div class="hero-copy">
+                    <p class="eyebrow">Backend-focused full stack developer</p>
+                    <h1><span id="typing"></span></h1>
+                    <p class="hero-subtitle" id="typing1"></p>
+                    <p class="hero-text">
+                        I build digital products with backend depth and front-end restraint, turning technical skill into work that feels bold, modern, and unmistakably intentional.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn">See Projects</a>
+                        <a href="mailto:srijitpal.official@gmail.com" class="btn btn-secondary">Let's Talk</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <strong>Backend-first builder</strong>
+                            <span>Systems, APIs, and product logic designed to scale cleanly.</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>Design-aware engineer</strong>
+                            <span>Interfaces that look refined instead of looking assembled.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card main-card">
+                        <p class="card-label">What makes me different</p>
+                        <h2>I care about how the architecture feels and how the experience performs.</h2>
+                        <div class="stack-pills">
+                            <span>Django</span>
+                            <span>REST APIs</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-card floating-card">
+                        <p class="card-label">Signature</p>
+                        <ul>
+                            <li>Sharp visual tone</li>
+                            <li>Readable, scalable code</li>
+                            <li>Fast responsive layouts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Building software that feels authored, not mass-produced.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <p>
+                            I am a Computer Science postgraduate with a strong interest in backend engineering, scalable APIs, and polished digital products. I enjoy turning complex requirements into systems that are simple to use and easy to maintain.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <p>
+                            My edge is the combination of engineering fundamentals and visual judgment. I do not want projects that only function well. I want them to feel premium, clear, and memorable from the first interaction.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="edge" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">Edge</p>
+                    <h2>The kind of value that makes a recruiter stop scrolling.</h2>
+                </div>
+
+                <div class="edge-grid">
+                    <article class="edge-card edge-card-large">
+                        <span class="edge-number">01</span>
+                        <h3>I blend backend seriousness with front-end polish.</h3>
+                        <p>Many student portfolios choose one side. I build dependable logic and present it with a visual language that feels deliberate.</p>
+                    </article>
+                    <article class="edge-card">
+                        <span class="edge-number">02</span>
+                        <h3>I think in systems.</h3>
+                        <p>From API design to database structure, I focus on clarity, maintainability, and growth.</p>
+                    </article>
+                    <article class="edge-card">
+                        <span class="edge-number">03</span>
+                        <h3>I design for impression.</h3>
+                        <p>Details matter. Spacing, rhythm, typography, and motion all help the work feel stronger.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Capabilities shaped for serious product work.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Backend Development</h3>
+                        <p>Django, REST APIs, authentication flows, database modeling, and business logic built for scale.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Frontend Experience</h3>
+                        <p>Responsive layouts, clean UI systems, animation polish, and mobile-friendly user journeys.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Core Computer Science</h3>
+                        <p>Strong fundamentals in DSA, operating systems, DBMS, networking concepts, and system design.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Collaboration</h3>
+                        <p>Readable code, maintainable project structure, and a practical approach to solving real user needs.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Projects presented like outcomes, not assignments.</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured">
+                        <div class="project-topline">
+                            <span class="project-badge">Featured</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>University Management System</h3>
+                        <p>
+                            A Django and REST API platform to manage students, courses, faculty workflows, and academic operations with strong structure and admin clarity.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>REST API</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-badge">Case Study</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>E-commerce Platform</h3>
+                        <p>
+                            A multi-vendor marketplace for artisans with discovery, listing, and management flows designed to support growth and trust.
+                        </p>
+                        <div class="project-tech">
+                            <span>Backend Logic</span>
+                            <span>Search</span>
+                            <span>Product Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a href="https://github.com/srpxm" target="_blank" rel="noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-badge">Approach</span>
+                            <span class="project-year">Always</span>
+                        </div>
+                        <h3>Engineering Philosophy</h3>
+                        <p>
+                            I focus on building things that stay understandable as they grow, and on giving users an experience that feels confidently designed from the first click.
+                        </p>
+                        <div class="project-tech">
+                            <span>Clarity</span>
+                            <span>Performance</span>
+                            <span>Maintainability</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let’s build something impossible to ignore.</h2>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-copy">
+                        <p>
+                            If you want someone who cares about architecture, user experience, and clean execution, I would love to connect.
+                        </p>
+                    </div>
+
+                    <div class="contact-container">
+                        <a href="mailto:srijitpal.official@gmail.com" target="_blank" rel="noreferrer" class="contact-card">
+                            <strong>Email</strong>
+                            <span>srijitpal.official@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/srpxm" target="_blank" rel="noreferrer" class="contact-card">
+                            <strong>GitHub</strong>
+                            <span>github.com/srpxm</span>
+                        </a>
+                        <a href="https://linkedin.com/in/srijitpal" target="_blank" rel="noreferrer" class="contact-card">
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/srijitpal</span>
+                        </a>
+                        <a href="https://leetcode.com/u/recx_srp" target="_blank" rel="noreferrer" class="contact-card">
+                            <strong>LeetCode</strong>
+                            <span>leetcode.com/u/recx_srp</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <button id="topBtn" aria-label="Scroll to top">Top</button>
+    <script src="script.js"></script>
+</body>
+</html>
