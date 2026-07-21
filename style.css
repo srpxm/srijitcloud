@@ -274,7 +274,6 @@ body.light-mode .navbar {
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--accent);
-    scroll-margin-top: 120px;
 }
 
 .hero-kicker {
