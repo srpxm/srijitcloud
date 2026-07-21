@@ -249,6 +249,7 @@ body.light-mode .navbar {
     transform: translateY(28px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     padding: 2rem 0 5rem;
+    scroll-margin-top: 120px;
 }
 
 .section.show {
